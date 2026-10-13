@@ -57,7 +57,7 @@ disp(table(est.X', (est.X - X0)', sigma_post', ...
      'RowNames', names, 'VariableNames', {'Estimate', 'Correction', 'Sigma'}));
 
 fig = plot_residuals(obs.t, est, [1, 2, n_iter], p, 'Residuals - Task 1');
-save_figure(fig, 'residuals_task1', SAVE_FIGURES);
+save_figure(fig, 'residuals', SAVE_FIGURES);
 
 %% TASK 2 - Which observable carries more information?
 % Covariance of a range-only and of a range-rate-only solution (no a priori),
